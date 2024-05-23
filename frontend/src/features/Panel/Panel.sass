@@ -1,0 +1,36 @@
+.panel
+  height: 100%
+  flex-grow: 1
+  border-right: 1px solid rgba(218, 220, 224, 0.5)
+  .notice
+    font-size: 12px
+    color: #666
+    text-align: center
+    padding: 18px
+  .rooms
+    height: calc(100% - 55px - 41px - 45px)
+    overflow-y: scroll
+    -webkit-overflow-scrolling: touch
+
+@media screen and (min-width: 1200px)
+  .panel
+    max-width: 360px
+    min-width: 360px
+
+@media screen and (min-width: 700px) and (max-width: 1199px)
+  .panel
+    max-width: 300px
+    min-width: 300px
+
+@media screen and (max-width: 699px)
+  .panel
+    width: 100%
+
+.theme.light .panel
+  background: #fff
+
+.theme.dark .panel
+  background: #303841
+
+.active
+  color: #da7d02 !important

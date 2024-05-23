@@ -1,0 +1,42 @@
+.admin-overlay
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  background: rgba(0,0,0,0.7)
+  z-index: 2000
+  display: flex
+  justify-content: center
+  align-items: center
+  .notice
+    color: #666
+    font-size: 13px
+    padding-top: 14px
+  .box
+    width: 400px
+    max-height: 90vh
+    max-width: 90vw
+    background: #f7f7f7
+    display: flex
+    flex-direction: column
+    .top-controls
+      padding: 14px 20px
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      .title
+        font-weight: bold
+      .close
+        font-size: 24px
+        cursor: pointer
+  .data-editor
+    overflow-y: scroll
+    padding: 12px 20px
+    .padding
+      height: 12px
+  .admin-form-error
+    color: #DA1102
+    font-size: 13px
+

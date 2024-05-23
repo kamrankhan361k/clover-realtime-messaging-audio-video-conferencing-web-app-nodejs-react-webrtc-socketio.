@@ -1,0 +1,55 @@
+.add-peers-overlay
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  background: rgba(0,0,0,0.7)
+  z-index: 2000
+  display: flex
+  justify-content: center
+  align-items: center
+  .box
+    width: 400px
+    height: 400px
+    max-height: 90vh
+    max-width: 90vw
+    background: #f7f7f7
+    display: flex
+    flex-direction: column
+    .top-controls
+      padding: 14px 20px
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      .title
+        font-weight: bold
+      .close
+        font-size: 24px
+        cursor: pointer
+    .search-bar
+      width: 100%
+      height: 40px
+      border-bottom: 1px solid rgba(218, 220, 224, 0.5)
+      background: rgba(60, 60, 60, .05)
+      .icon
+        font-size: 18px
+        padding: 0 2px 5px 13px
+        color: #666
+        cursor: pointer
+      .icon:hover
+        color: #000
+      .search
+        flex-grow: 1
+        input
+          background: transparent
+          border: 0
+          border-radius: 0
+    .users
+      width: 100%
+      height: 100%
+      flex-grow: 1
+      overflow-y: scroll
+
+

@@ -1,0 +1,38 @@
+.meeting-entry
+  width: 100%
+  height: 80px
+  border-bottom: 1px solid rgba(218, 220, 224, 0.3)
+  cursor: pointer
+  .text
+    flex-grow: 1
+    display: flex
+    flex-direction: column
+    justify-content: center
+    .title
+      font-weight: bold
+      font-size: 13px
+    .title.highlight
+      color: #000
+    .message
+      font-size: 11px
+    .message.highlight
+      font-weight: bold
+  .img-wrapper
+    overflow: hidden
+    width: 40px
+    height: 40px
+    border-radius: 20px
+    margin: 7px 12px
+    .img-content
+      display: flex
+      width: 40px
+      height: 40px
+      border-radius: 20px
+      justify-content: center
+      align-items: center
+      background: #666
+      color: #f7f7f8
+      font-size: 18px
+    .img-content.active
+      background: #55d48b
+      color: #fff !important

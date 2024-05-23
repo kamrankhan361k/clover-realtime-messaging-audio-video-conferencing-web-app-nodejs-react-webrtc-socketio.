@@ -1,0 +1,145 @@
+$nav-background: #303841
+$panel-background: #363e47
+
+.meeting-controls
+  position: absolute
+  width: 100%
+  bottom: 0
+  z-index: 1
+  display: flex
+  justify-content: center
+  align-items: center
+  padding-bottom: 18px
+  .close
+    max-width: 80px
+    width: 7vw
+    min-width: 50px
+    height: 50px
+    background: #eb1819
+    color: white
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 1px solid #eb1819
+  .close:hover
+    background: #d61314
+    border-color: #d61314
+  .control
+    max-width: 80px
+    width: 7vw
+    min-width: 50px
+    height: 50px
+    background: $panel-background
+    // border: 1px solid rgba(0,0,0,0.2)
+    display: flex
+    justify-content: center
+    align-items: center
+    color: white
+    cursor: pointer
+  .control:hover
+    background: $nav-background
+
+.meeting-top-controls-transparent
+  width: 100%
+  height: 0
+  display: flex
+  justify-content: space-between
+  z-index: 1000
+  .panel-control
+    position: relative
+    color: #f7f7f7
+    font-size: 20px
+    width: 60px
+    min-width: 60px
+    height: 95px
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+  .videos
+    position: relative
+    video
+      width: 140px
+      height: 105px
+      cursor: pointer
+      margin: 0 1px
+
+.meeting-top-controls
+  width: 100%
+  flex-grow: 1
+  background: $panel-background
+  z-index: 1
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  height: 95px
+  min-height: 95px
+  max-width: 100%
+  .videos::-webkit-scrollbar
+    display: none
+  .videos
+    flex-grow: 1
+    display: flex
+    min-width: 137px
+    overflow-x: auto
+    -ms-overflow-style: none
+    scrollbar-width: none
+    .video
+      min-width: 135px
+      width: 135px
+      height: 95px
+      cursor: pointer
+      margin: 0 1px
+    .rotated
+      transform: rotateY(180deg)
+      -webkit-transform: rotateY(180deg)
+      -moz-transform: rotateY(180deg)
+  .panel-control
+    color: #f7f7f7
+    font-size: 20px
+    width: 60px
+    min-width: 60px
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    background: $panel-background
+  .panel-control:hover
+    background: $nav-background
+
+.meeting-main
+  width: 100%
+  height: 100%
+
+@media screen and (max-width: 700px)
+  .meeting-controls
+    padding-bottom: 12px
+    .close
+      font-size: 14px
+      max-width: 13.5vw
+      min-width: 40px
+      width: 13.5vw
+    .close:hover
+      background: #d61314
+    .control
+      max-width: 13.5vw
+      min-width: 40px
+      width: 13.5vw
+      background: $panel-background
+      font-size: 14px
+
+  .meeting-top-controls
+    min-height: 85px
+    height: 85px
+    .videos
+      .video
+        width: 110px
+        height: 85px
+      .remote-video
+        height: 100%
+    .panel-control
+      font-size: 14px
+      width: 50px
+      min-width: 50px

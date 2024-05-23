@@ -1,0 +1,32 @@
+.login
+  width: 100vw
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  height: 100%
+
+.login-scrollable
+  overflow-y: auto
+  height: 100%
+  width: 100%
+
+.login-inner
+  min-height: 420px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.toggle-credits
+  width: 100%
+
+@media screen and (max-height: 600px)
+  .login-scrollable
+    align-items: flex-start
+
+@media screen and (max-height: 620px)
+  #copyright
+    display: none
+
+.logo
+  padding: 0 95px 10px 95px

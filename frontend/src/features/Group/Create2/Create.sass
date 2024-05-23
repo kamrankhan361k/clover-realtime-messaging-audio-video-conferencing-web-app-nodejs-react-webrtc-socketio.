@@ -1,0 +1,116 @@
+.group-create
+  height: 100%
+  flex-grow: 1
+  border-right: 1px solid rgba(218, 220, 224, 0.5)
+  display: flex
+  flex-direction: column
+
+  .picture
+    left: 50%
+    -webkit-transform: translate(-50%, 0)
+    -ms-transform: translate(-50%, 0)
+    transform: translate(-50%, 0)
+    // margin: 24px 0 10px 0
+    position: relative
+    width: 150px
+    cursor: pointer
+
+    .img
+      display: flex
+      width: 150px
+      height: 150px
+      border-radius: 75px
+      justify-content: center
+      align-items: center
+      background: #666
+      color: #f7f7f8
+      font-size: 50px
+
+    img
+      width: 150px
+      height: 150px
+      border-radius: 75px
+
+    .overlay
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      width: 100%
+      height: 100%
+      opacity: 0
+      background: #000000
+      border-radius: 150px
+
+  .picture:hover .overlay
+    opacity: 0.7
+
+    .text
+      color: #ffffff
+      font-size: 30px
+      position: absolute
+      top: 50%
+      left: 50%
+      -webkit-transform: translate(-50%, -50%)
+      -ms-transform: translate(-50%, -50%)
+      transform: translate(-50%, -50%)
+      text-align: center
+
+  input.group-name
+    background: white
+    border: 1px solid #666
+    border-radius: 25px
+    min-height: 40px
+    height: 40px
+    padding: 0 20px 0 20px
+    margin: 15px 10px 6px 10px
+    color: #666
+    font-size: 15px
+    flex-shrink: 0
+    box-shadow: none
+
+  input.group-name:focus
+    box-shadow: none
+    outline-width: 0
+
+@media screen and (min-width: 1200px)
+  .group-create
+    max-width: 360px
+    min-width: 360px
+
+@media screen and (min-width: 700px) and (max-width: 1199px)
+  .group-create
+    max-width: 300px
+    min-width: 300px
+
+@media screen and (max-width: 699px)
+  .group-create
+    width: 100%
+
+.theme.light .group-create
+  background: #fff
+
+.theme.dark .group-create
+  background: #303841
+
+.active
+  color: #da7d02 !important
+
+.selection-text
+  text-align: center
+  padding: 12px
+  font-size: 14px
+  background: #f7f7f8
+  color: #666
+
+.selection-text.error
+  color: #DA7D02
+
+.create-button
+  background: #DA7D02
+  width: 100%
+
+.create-button:hover
+  background: #DA7D02
+  opacity: 0.9

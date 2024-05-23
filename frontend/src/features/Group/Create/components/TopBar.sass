@@ -1,0 +1,45 @@
+.top-bar-group
+  width: 100%
+  height: 54px
+  border-bottom: 1px solid rgba(218, 220, 224, 0.5)
+  .text
+    flex-grow: 1
+    display: flex
+    flex-direction: column
+    justify-content: center
+    .title
+      font-weight: bold
+      font-size: 13px
+    .message
+      font-size: 11px
+  .profile
+    overflow: hidden
+    width: 40px
+    height: 40px
+    border-radius: 20px
+    margin: 7px 12px
+    cursor: pointer
+    .img
+      display: flex
+      width: 40px
+      height: 40px
+      border-radius: 20px
+      justify-content: center
+      align-items: center
+      background: #666
+      color: #f7f7f8
+      font-size: 18px
+  .nav
+    display: flex
+    padding-right: 9px
+    .button
+      color: #666
+      font-size: 18px
+      padding: 9px
+      cursor: pointer
+    .button:hover
+      color: #000
+
+@media screen and (min-width: 700px)
+  .mobile
+    display: none

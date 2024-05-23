@@ -1,0 +1,129 @@
+$nav-background: #666
+$panel-background: #666
+
+.join
+  width: 360px
+  max-width: calc(100% - 80px)
+  border: 1px solid #ccc
+  padding: 20px
+  background: white
+
+  .logo-little
+    height: 50px
+    object-fit: contain
+    margin-bottom: -30px
+
+  .title, .name, .progress
+    font-size: 18px
+    font-weight: bold
+    text-transform: uppercase
+    margin-bottom: 0
+
+  .name
+    margin-bottom: 0
+    margin-top: 8px
+    font-size: 14px
+
+  .progress
+    margin: 10px
+    font-size: 16px
+
+  .controls
+    display: flex
+    flex-direction: row
+    align-items: center
+    padding: 0 18px
+
+    .icon
+      font-size: 18px
+      margin: 0 8px
+
+  .rounded-button
+    width: 60px
+    height: 60px
+    background: #da7d02
+    border-radius: 30px
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 8px
+
+    .button-icon
+      color: white
+      font-size: 24px
+
+  .rounded-button.close
+    background: #6d3e01
+
+  .rounded-button:hover
+    filter: opacity(0.9)
+
+  @keyframes ring
+    0%
+      width: 150px
+      height: 150px
+      border: 10px double #da7d02
+      padding: 4px
+    50%
+      width: 150px
+      height: 150px
+      border: 0 solid #ffffff
+      padding: 0
+    100%
+      width: 150px
+      height: 150px
+      border: 10px double #da7d02
+      padding: 4px
+
+  .picture
+    left: initial
+    transform: initial
+    width: 150px
+    cursor: pointer
+
+    .img-wrapper
+      width: 150px
+      height: 150px
+      border-radius: 75px
+      animation-name: ring
+      animation-duration: 2.8s
+      animation-iteration-count: infinite
+      animation-fill-mode: both
+      animation-timing-function: ease-out
+      box-sizing: border-box
+      -moz-box-sizing: border-box
+      -webkit-box-sizing: border-box
+
+    .img
+      display: flex
+      width: 100%
+      height: 100%
+      border-radius: 75px
+      justify-content: center
+      align-items: center
+      background: $nav-background
+      color: #f7f7f8
+      font-size: 50px
+
+    img
+      width: 150px
+      height: 150px
+      border-radius: 75px
+      animation-name: ring
+      animation-duration: 2.8s
+      animation-iteration-count: infinite
+      animation-fill-mode: both
+      animation-timing-function: ease-out
+
+    .overlay
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      width: 100%
+      height: 100%
+      opacity: 0
+      background: #000000
+      border-radius: 150px

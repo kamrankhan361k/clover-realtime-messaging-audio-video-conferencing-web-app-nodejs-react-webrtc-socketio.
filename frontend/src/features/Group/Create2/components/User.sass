@@ -1,0 +1,64 @@
+.room
+  width: 100%
+  height: 54px
+  border-bottom: 1px solid rgba(218, 220, 224, 0.3)
+  cursor: pointer
+  .profile
+    overflow: hidden
+    width: 40px
+    min-width: 40px
+    height: 40px
+    border-radius: 20px
+    margin: 7px 12px
+    .img
+      display: flex
+      width: 40px
+      height: 40px
+      border-radius: 20px
+      justify-content: center
+      align-items: center
+      background: #666
+      color: #f7f7f8
+      font-size: 18px
+  .text
+    flex-grow: 1
+    display: flex
+    flex-direction: column
+    justify-content: center
+    .title
+      font-weight: bold
+      font-size: 13px
+    .message
+      font-size: 11px
+  .controls
+    display: flex
+    align-items: center
+    padding-right: 5px
+    .date
+      font-size: 10px
+      padding-right: 7px
+      text-align: right
+      padding-top: 2px
+      white-space: pre-wrap
+      word-wrap: break-word
+    .date.selected
+      color: #DA7D02
+    .button
+      min-width: 24px
+      color: #666
+      font-size: 14px
+      padding: 5px
+      cursor: pointer
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 100%
+    .button.selected
+      color: #DA7D02
+    .button:hover
+      color: #000
+    .button.selected:hover
+      color: #DA7D02
+
+.room:hover
+  background: #f2f7f7

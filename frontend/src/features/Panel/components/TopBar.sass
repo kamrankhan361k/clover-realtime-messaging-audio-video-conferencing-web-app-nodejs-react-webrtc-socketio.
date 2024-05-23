@@ -1,0 +1,52 @@
+.top-bar
+  width: 100%
+  height: 54px
+  border-bottom: 1px solid rgba(218, 220, 224, 0.5)
+  .dot
+    margin-left: -26px
+    margin-right: 11px
+    margin-top: 28px
+    width: 11px
+    height: 11px
+    border-radius: 8px
+    background: gray
+    border: 2px solid #fff
+  .online
+    background: #55d48b
+  .away
+    background: orange
+  .busy
+    background: #d61314
+  .offline
+    color: gray
+  .profile
+    overflow: hidden
+    width: 40px
+    height: 40px
+    border-radius: 20px
+    margin: 7px 12px
+    cursor: pointer
+    .img
+      display: flex
+      width: 40px
+      height: 40px
+      border-radius: 20px
+      justify-content: center
+      align-items: center
+      background: #666
+      color: #f7f7f8
+      font-size: 18px
+  .nav
+    display: flex
+    padding-right: 9px
+    .button
+      color: #666
+      font-size: 18px
+      padding: 9px
+      cursor: pointer
+    .button:hover
+      color: #000
+
+@media screen and (min-width: 700px)
+  .mobile
+    display: none
